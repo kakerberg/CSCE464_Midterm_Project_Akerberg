@@ -2,13 +2,13 @@
 Main CSS file for project site
 */
 
-.menuParent{
+.menuParent {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-.menuChild{
+.menuChild {
     flex: 1;
     border: 3px solid white;
     background-color: orange;
@@ -16,27 +16,35 @@ Main CSS file for project site
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-a:link{
+a:link {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-.home {
+.top {
     background-color: #faba6b;
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
 
-h1{
+.main {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid white;
+    margin: 10px;
+    padding: 3px;
+}
+
+h1 {
     font-size: 48px;
 }
 
-.header{
+.header {
     display: flex;
     flex-direction: column;
     border: 3px solid white;
@@ -44,24 +52,32 @@ h1{
     padding: 3px;
 }
 
-p{
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #faba6b;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    justify-content: center;
+
+}
+
+footer p {
+    border: 3px solid white;
+    display: inline-block;
+    padding: 7px;
+}
+
+p {
     font-size: 22px;
 }
 
-.main{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid white;
-    margin: 10px;
-    padding: 3px;
-}
-
-.make_table img{
+.make_table img {
     height: 128px;
     width: 128px;
 }
 
-.make_table table{
+.make_table table {
     overflow-x: auto;
     margin-left: auto;
     margin-right: auto;
@@ -72,40 +88,72 @@ p{
     padding: 15px;
 }
 
-.featured_table table{
+.featured_table table {
     margin-left: auto;
     margin-right: auto;
     padding: 3px;
     border: 3px solid;
 }
 
-.featured_table td, tr{
+.featured_table td,
+tr {
     border: 3px solid;
     text-align: center;
 }
 
-.featured_table img{
-    width: 550px;
-    height: 280px;
+.featured_table img {
+    width: 512px;
+    height: 288px;
+}
+
+.listing_table table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3px;
+    border: 3px solid;
+    width: 800px;
+    height: 650px;
+}
+
+.listing_table td,
+tr {
+    border: 3px solid;
+    text-align: center;
+}
+
+.listing_table img {
+    width: 512px;
+    height: 288px;
 }
 
 /* Media query to resize large elements on mobile */
-@media screen and (max-width: 900px){
-    .header img{
+@media screen and (max-width: 900px) {
+    .header img {
         height: 70px;
         width: 200px;
     }
-    h1{
+
+    h1 {
         font-size: 28px;
     }
-    p{
+
+    p {
         font-size: 16px;
     }
-    .featured_table img{
+
+    .featured_table img {
         height: 70px;
         width: 138px;
     }
-    .make_table img{
+
+    .listing_table img {
+        height: 70px;
+        width: 138px;
+    }
+
+    .make_table img {
         height: 32px;
         width: 32px;
     }
