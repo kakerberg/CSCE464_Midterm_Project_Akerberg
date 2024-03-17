@@ -147,6 +147,11 @@ tr {
     font-size: medium;
 }
 
+footer img {
+    height: 5%;
+    width: 5%;
+}
+
 /* Media query to resize large elements on mobile */
 @media screen and (max-width: 900px) {
     .header img {
