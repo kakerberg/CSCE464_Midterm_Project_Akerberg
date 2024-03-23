@@ -173,12 +173,28 @@ footer img {
     }
 
     .listing_table img {
-        height: 70px;
+        height: auto;
         width: 138px;
     }
 
     .make_table img {
         height: 32px;
         width: 32px;
+    }
+
+    .listing_table table {
+        width: 100%;
+    }
+
+    .listing_table tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .listing_table td {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 }
